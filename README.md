@@ -2,13 +2,7 @@
 
 CLI‑инструмент для отчета о медианных тратах на кофе студентами.
 
-## Формат данных
-
-CSV‑файлы с заголовком:
-
-```text
-student,date,coffee_spent,sleep_hours,study_hours,mood,exam
-```
+<img width="1090" height="372" alt="image" src="https://github.com/user-attachments/assets/03138d16-3b0c-4a65-ac4c-dbba00ef99f9" />
 
 ## Запуск через Poetry
 
