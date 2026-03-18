@@ -1,1 +1,33 @@
-# wm_csv_report
+# wm-csv-report
+
+CLI‑инструмент для отчета о медианных тратах на кофе студентами.
+
+## Формат данных
+
+CSV‑файлы с заголовком:
+
+```text
+student,date,coffee_spent,sleep_hours,study_hours,mood,exam
+```
+
+## Запуск через Poetry
+
+```bash
+poetry install
+poetry run coffee-report --files math.csv physics.csv programming.csv --report median-coffee
+```
+
+## Запуск через локальное виртуальное окружение (.venv)
+
+```bash
+python3 -m venv .venv        # Windows: python -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python -m app.cli --files math.csv physics.csv programming.csv --report median-coffee
+```
+
+## Тесты
+
+```bash
+poetry run pytest           # (.venv): pytest
+```
